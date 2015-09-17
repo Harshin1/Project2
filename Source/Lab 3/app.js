@@ -28,3 +28,15 @@ animateApp.controller('aboutController', function($scope) {
 animateApp.controller('contactController', function($scope) {
     $scope.pageClass = 'contact';
 });
+
+function LoginController($scope) {
+    
+    $scope.logins = [];
+    $scope.login = function (user, pwd) {
+        localStorage.setItem("name" , user);
+        $scope.logins.push( localStorage.getItem("name") + " was logged in.");
+        window.location = "about.html";
+       
+    };
+    
+}

@@ -21,8 +21,8 @@
 
 <body>
 
-Welcome : <div id = {{user.firstName}}</div> 
-    <button type="button"><a href="home.html" class="btn btn-primary btn-lg">Home</a></button>
+Welcome : <div id = "username"></div> 
+    <button type="button"><a href="index.html" class="btn btn-primary btn-lg">Home</a></button>
     <button type="button"><a href="contact.html" class="btn btn-danger btn-lg">Register</a> <br></button>
     <br>
     <br><br>
@@ -134,7 +134,10 @@ function LoginController($scope) {
         window.location = "about.html";
        
     };
-    \
+    
 }
 
+    var name =  localStorage.getItem("name");   
+document.getElementById("username").innerHTML = name;
+    
 </script>
