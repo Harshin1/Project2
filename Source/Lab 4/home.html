@@ -1,0 +1,21 @@
+<h1>Log In Page </h1>
+
+
+<!--<p style="text-align: center "> User name: <input type="text"><br><br>-->
+<!--<pPassword: <input type="password"><br><br>-->
+<div ng-app ng-controller="LoginController">
+    
+      
+   <div class="input">
+       <p style="text-align: center "> Username: <input ng-model="user.firstName"></input>
+    <br/><br/>
+    Password: <input ng-model="user.pwd" type="password"></input>
+      
+    <br/><br/>
+    <input type="submit" ng-click="login(user.firstName, user.pwd)" value="Login"></input>
+    <br/><br/>
+
+</div>  
+<!--<p style="text-align: center "><button type="button"><a href="about.html"  class="btn btn-success btn-lg">Log In</a></button>-->
+<p style="text-align: center "><button type="button"><a href="contact.html" class="btn btn-danger btn-lg">Register</a></button>
+ 
