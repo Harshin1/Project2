@@ -1,0 +1,50 @@
+<ion-view title="Barcode Scanner">
+    <ion-content class="barc">
+        <div>
+            <p class="display">{{user}}</p>
+            <!--<div class="list list-inset">
+                
+                <label>
+                <p class="msg">Please scan the Item</p>
+                </label>
+            </div>
+            <div class="padding-left padding-right">
+            <div class="list">
+                <div class="button-bar">
+                    
+                    <a class="button" ng-click="register(username, password)">Register</a>
+                    <a class="button" ng-click="scan();" >Scan</a>
+                </div>
+                <br><br>
+                <p class="display">{{msg}}</p>
+                
+            </div>
+            </div>-->
+            <!--<div class="list">
+                <div ng-repeat="scan in barcodes">{{ scan }}</div>
+            </div>-->
+            
+           <label class="item item-input">
+    <input type="text" placeholder="Enter Barcode image URL" id="barcode1" ng-model="barcode">
+  </label>
+  <button class="button button-balanced" ng-click="getWeather()">Show Barcode
+      
+    
+</button><br>
+    
+   
+<div data-ng-model="st_temp"></div>
+    <div data-ng-model="end_temp"></div>
+    
+    <br>
+    <p>Barcode:  {{st_place}}  </p>
+            
+            <p>12 bit Barcode:  {{st1_place}}  </p> 
+            <br>
+    <input type="hidden" id="barcode" value="{{st_place}}"/>
+    <button  class="button button-balanced" id="btn" ng-click="getDetails()"> Get Product Details </button><br><br>
+    <p>Name:  {{end_place}}  </p>
+            
+        </div>
+    </ion-content>
+</ion-view>

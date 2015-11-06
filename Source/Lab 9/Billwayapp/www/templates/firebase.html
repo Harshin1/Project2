@@ -1,0 +1,33 @@
+<ion-view title="Login Page">
+    <ion-content class="barc">
+        <div>
+            <div class="list list-inset">
+                <p class="error">{{errormsg}}</p>
+                <p class="display">{{sucmsg}}</p>
+                <p class="display">{{msg}}</p><br><br>
+                <p class="error">Hello user </p>
+                <label class="item item-input">
+                    <input ng-model="username" type="text" placeholder="Username" />
+                </label>
+                <label class="item item-input">
+                    <input ng-model="password" type="password" placeholder="Password" />
+                </label>
+                
+            </div>
+            <div class="padding-left padding-right">
+            <div class="list">
+                <div class="button-bar">
+                    <a class="button" ng-click="login(username, password)">Login</a>
+                    <a class="button" ng-click="register()">Register</a>
+                    <a class="button" ng-click="delete(username, password)">Delete</a>
+                    <a class="button" ng-click="update(username, password)">Update</a>
+                    
+                </div>
+                <br><br>
+                
+                
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view> 
