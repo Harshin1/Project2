@@ -1,0 +1,31 @@
+/* Empty. Add your own CSS if you like */
+.button{
+background-color: #b18eae;
+}
+
+.msg{
+color: blueviolet
+}
+
+.display{
+color: #c6bea8;
+}
+
+.error{
+color: red;
+}
+
+.barc{
+
+background-color: #f4f3f2;
+
+}
+
+.list.list-inset{
+    background-color: #f7faf2;
+}
+
+.bar.bar-stable .title {
+    background-color: #c1dddd;
+    text-decoration-color: navy;
+}

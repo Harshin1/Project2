@@ -1,0 +1,60 @@
+<ion-view title="Enhanced weather reporting">
+    <ion-content class="barc">
+        <div onload="intialize()">
+            <p class="display">{{user}}</p>
+            <!--<div class="list list-inset">
+                
+                <label>
+                <p class="msg">Please scan the Item</p>
+                </label>
+            </div>
+            <div class="padding-left padding-right">
+            <div class="list">
+                <div class="button-bar">
+                    
+                    <a class="button" ng-click="register(username, password)">Register</a>
+                    <a class="button" ng-click="scan();" >Scan</a>
+                </div>
+                <br><br>
+                <p class="display">{{msg}}</p>
+                
+            </div>
+            </div>-->
+            <!--<div class="list">
+                <div ng-repeat="scan in barcodes">{{ scan }}</div>
+            </div>-->
+            
+           <label class="item item-input">
+    <input type="text" placeholder="Enter Source" id="source" ng-model="barcode1">
+  </label>
+            <label class="item item-input">
+    <input type="text" placeholder="Enter Destination" id="end" ng-model="barcode2">
+  </label>
+            
+  <div class="button-bar bar-positive">
+                    <a class="button" ng-click="calcRoute()">Get Directions</a>
+      <a class="button" ng-click="calCoord()">Get coordinates</a>
+            
+      <input type="hidden" id="lat1" value =" {{temp1}}" />
+          
+      <input type="hidden" id="lng1" value ="{{temp2}}"/>
+      <input type="hidden" id="lat2" value =" {{temp3}}" />
+          <input type="hidden" id="lng2" value ="{{temp4}}"/>
+      <input type="hidden" id="lat3" value =" {{temp5}}" />
+          <input type="hidden" id="lng3" value ="{{temp6}}"/>
+      <br>
+                  </div>
+            
+    <center><div id ="map-canvas"></div></center>
+            
+    <p> Source : {{name1}} --- {{icon}} --- {{temps}}</p>
+   <p>  Intermediate City : {{city1}} --- {{weather1}} --- {{tempa1}}</p>
+            <p>  Intermediate City : {{city2}} --- {{weather2}} --- {{tempa2}}</p>
+            <p>  Intermediate City : {{city3}} --- {{weather3}} --- {{tempa3}}</p>
+            <p> Destination : {{name2}} --- {{icon2}} --- {{tempd}}</p>
+
+    
+      
+        </div>
+    </ion-content>
+</ion-view>
