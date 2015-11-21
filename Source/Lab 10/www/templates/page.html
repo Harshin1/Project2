@@ -1,0 +1,40 @@
+<ion-view ng-controller="pageCtrl" title="Page">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <div class="list">
+          <label class="item item-input item-select">
+            <div class="input-label">
+              SearchKey
+            </div>
+            <select ng-model="SearchKey">
+              <option selected>URLGetTextSentiment</option>
+              <option>URLGetAuthors</option>
+              <option>URLGetRankedImageFaceTags</option>
+              <option>URLGetImage</option>
+              <option>URLGetRelations</option>
+                <option>URLGetRankedTaxonomy</option>
+                <option>URLGetRankedNamedEntities</option>
+                <option>URLGetRankedKeywords</option>
+                <option>URLGetLanguage</option>
+            </select>
+          </label>
+        </div>
+            <label class="item item-input">
+                <span class="input-label">Input</span>
+                <input type="text" placeholder="Search URL" ng-model="SearchURL">
+            </label>
+        </form>
+        <button class="button button-dark button-block button-small" ng-click="getResult(SearchKey, SearchURL)">Submit</button>
+        <div>
+            <p> {{ result.authors.names }} <p>
+            <p> {{ result.docSentiment.score}} </p>
+            <p> {{ result.docSentiment.type}} </p>
+            <p> {{ result.imageFaces[0].age}} </p>
+            <p> {{ result.imageFaces[0].gender}} </p>
+            <p> {{ result.taxonomy}} </p>
+            <p> {{ result.keywords.text}} </p>
+            <p> {{ result.keywords.text.relevance}} </p>
+            <p> {{ result.language}} </p>
+        </div>
+    </ion-content>
+</ion-view>
