@@ -1,2 +1,2 @@
 # Project2
-Second project
+This includes lab work and Billway, Smart Shopping application
